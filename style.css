@@ -38,9 +38,8 @@
 
 .nav-1{
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
-    gap: 200px;
     margin-top: 20px;
 }
 
@@ -462,9 +461,11 @@
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    align-self: flex-start;
     gap: 30px;
     padding-top: 30px;
 }
+
 
 .show-more{
   border-style: solid;
