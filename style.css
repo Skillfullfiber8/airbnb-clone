@@ -538,6 +538,10 @@
   color: #717171;
 }
 
+.footer-menu li:hover{
+  color: black;
+}
+
 .footer-help li{
   font-size: 14px;
   color: #282828;
@@ -551,8 +555,10 @@
 
 .footer-help{
   display: flex;
-  gap: 100px;
+  column-gap: 100px;
+  row-gap: 40px;
   padding-top: 40px;
+  flex-wrap: wrap;
 }
 
 .foot-left, .foot-right{
@@ -569,10 +575,65 @@
 }
 
 .footer-end{
-  padding-top: 40px;
+  padding-top: 10px;
 }
 
 .foot-left li:hover{
   text-decoration: underline;
   cursor: pointer;
+}
+
+.footer-end{
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.lang{
+  display: flex;
+  gap: 7px;
+  justify-content: center;
+  align-items: center;
+}
+
+.foot-right{
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
+.footer-end div{
+  padding: 5px;
+}
+
+.foot-right div:hover{
+  border: 1px solid #dddddd;
+  background-color: #dddddd;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 1018px) {
+  .top-menu{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 820px) {
+  .input-2,.input-3,.input-1-h1,.input-2-h1,input-3-h1{
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .input-4-text{
+    display: none;
+  }
+  .right-menu li:first-child{
+    display: none;
+  }
 }
