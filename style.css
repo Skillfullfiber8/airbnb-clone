@@ -22,7 +22,7 @@
     position: sticky;
     background-color: white;
     top: 0;
-    z-index: 2;
+    z-index: 5;
 }
 
 .logo{
@@ -107,7 +107,6 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 20px;
 }
 
 .blank{
@@ -465,4 +464,23 @@
     align-items: center;
     gap: 30px;
     padding-top: 30px;
+}
+
+.show-more{
+  border-style: solid;
+  border: 1px solid black;
+  border-radius: 12px;
+  background-color: black;
+  color: white;
+  padding: 16px;
+  cursor: pointer;
+}
+
+.explore{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top: 80px;
+  gap: 11px;
 }
